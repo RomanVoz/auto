@@ -1,0 +1,35 @@
+.header {
+    background-color: var(--first-color-bg);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+}
+
+.menu {
+
+}
+
+.menu__list {
+ display: flex;
+ gap: 20px;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu__list li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+}

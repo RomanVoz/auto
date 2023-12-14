@@ -15,7 +15,15 @@
 
 .menu__list {
  display: flex;
- gap: 20px;
+ gap: 50px;
+}
+
+.menu__list a{
+    padding: 14px 10px;
+}
+
+.menu__list a:hover {
+    font-weight: 600;
 }
 
 .submenu {
@@ -26,10 +34,66 @@
     transition: .3s linear;
     visibility: hidden;
     opacity: 0;
+
+    // display: flex;
+    width: 420px;
+    height: 265px;
+    // margin-top: 20px;
+    margin: 25px 25px 20px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.submenu li {
+    padding: 15px 15px;
 }
 
 .menu__list li:hover > .submenu {
     visibility: visible;
     opacity: 1;
     transform: rotateX(0);
+}
+
+.sub {
+    position: relative;
+}
+
+.sub::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    left: 70px;
+    top: 22px;
+    transform: rotateX(180deg);
+}
+
+.submenu li:hover {
+    border-radius: 10px;
+    background: #F1F8FA;
+}
+
+.header__phone {
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+}
+
+.header__telegram {
+    position: relative;
+    margin-top: 5px;
+}
+
+.text__telegram::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/telegram.svg);
+    width: 24px;
+    height: 24px;
+    left: 185px;
 }

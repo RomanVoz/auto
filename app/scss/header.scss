@@ -35,10 +35,9 @@
     visibility: hidden;
     opacity: 0;
 
-    // display: flex;
-    width: 420px;
-    height: 265px;
-    // margin-top: 20px;
+    // display: inline-block;
+    max-width: 420px;
+    max-height: 465px;
     margin: 25px 25px 20px 25px;
     justify-content: center;
     align-items: center;
@@ -50,6 +49,7 @@
 
 .submenu li {
     padding: 15px 15px;
+    margin: 25px 25px;
 }
 
 .menu__list li:hover > .submenu {

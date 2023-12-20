@@ -1,0 +1,8 @@
+.social__link {
+    position: relative;
+}
+
+.social__link::after {
+    content: '';
+    background-image: url(../images/arrow.svg);
+}

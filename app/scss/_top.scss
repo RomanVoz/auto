@@ -1,0 +1,85 @@
+.top {
+    height: 930px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, 
+    rgba(0, 0, 0, 0.50) 100%), url(../images/bg.jpg), 
+    lightgray 0.406px -75.601px / 131.445% 124.63% no-repeat;
+    
+    &__inner {
+    }
+
+    &__title {
+        color: #FFFFFF;
+        font-family: var( --second-font);
+        font-size: 74px;
+        line-height: 125%; /* 92.5px */
+        text-transform: uppercase;
+
+        // max-width: 830px;
+        padding-top: 150px;
+        margin: 0 auto;
+        margin-bottom: 140px;
+        text-align: end;
+        justify-content: center;
+    }
+
+    &__title span {
+        color: #FFFFFF;
+        font-family: var( --second-font);
+        font-size: 30px;
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+
+    &__title span::before {
+        content: '';
+        display: block;
+        width: 447px;
+        height: 3px;
+        background: #FFFFFF;
+        position: absolute; /* Позиционирование абсолютно относительно родительского элемента */
+        right: 16%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+        &--item {
+            width: 242px;
+            padding: 30px 20px 20px 20px;
+            align-items: center;
+            gap: 60px;
+        
+            border-radius: 10px;
+            border: 2px solid #FFF;
+
+            &:hover {
+                border-radius: 10px;
+                border: 2px solid #FFF;
+    
+                background: rgba(255, 255, 255, 0.05);
+    
+                /* blur */
+                backdrop-filter: blur(13.5px);
+            }
+        }
+
+
+        &--link  img{
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        &--link p {
+            align-self: stretch;
+            color: #FFFFFF;
+            text-align: center;
+            font-family: var(--general-font);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 115%;
+        }
+    }
+}

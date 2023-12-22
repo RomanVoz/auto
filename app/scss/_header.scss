@@ -1,0 +1,142 @@
+.header {
+    background-color: var(--first-color-bg);
+   
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__phone {
+        font-size: 24px;
+        color: black;
+        font-weight: 500;
+    }
+
+    &__telegram {
+        position: relative;
+        margin-top: 5px;
+    }
+}
+
+
+.menu {
+    &__list {
+        display: flex;
+        gap: 50px;
+       }
+
+    &__list a{
+        padding: 14px 10px;
+    }
+
+    &__list a:hover {
+        font-weight: 600;
+    }
+}
+
+.submenu {
+    position: absolute;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+
+    // display: inline-block;
+    max-width: 420px;
+    max-height: 465px;
+    margin: 25px 25px 20px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+    & li {
+        padding: 15px 15px;
+        margin: 25px 25px;
+    }
+
+    & li:hover {
+        border-radius: 10px;
+        background: #F1F8FA;
+    }
+    
+}
+
+.menu__list li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+.sub {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/arrow.svg);
+        width: 16px;
+        height: 16px;
+        left: 70px;
+        top: 23px;
+        transform: rotateX(180deg);
+    }
+}
+
+.text__telegram::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/telegram.svg);
+    width: 24px;
+    height: 24px;
+    left: 185px;
+}
+
+.menu__btn {
+    display: none;
+    border: none;
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+
+@media (max-width: 1000px) {
+    .menu {
+        &__list {
+            gap: 30px;
+        }
+        
+        &__list a {
+            padding: 0;
+        }
+    }
+
+    .sub {
+    
+        &::before {
+            left: 58px;
+            top: 10px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .menu {
+        order: 1;
+    }
+    
+    .menu__list {
+        display: none;
+    }
+
+    .menu__btn {
+        display: flex;
+    }
+}

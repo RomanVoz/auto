@@ -133,10 +133,41 @@
     }
     
     .menu__list {
-        display: none;
+        // display: none;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-top: 40px;
+
+        background-color: #F1F8FA;
+
+        position: absolute;
+        left: 0;
+        transform: translateY(-150%);
+        transition: transform .5s ease;
+    }
+
+    .menu__list.menu--open {
+        transform: translateY(3%);
     }
 
     .menu__btn {
         display: flex;
+    }
+    
+    .menu__btn.menu--open {
+        display: none;
+    }
+
+    .menu__btn--close {
+        display: none;
+    }
+
+    .menu__btn--close > .menu__btn.menu--open {
+        display: block;
     }
 }

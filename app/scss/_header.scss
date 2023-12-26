@@ -156,18 +156,63 @@
     }
 
     .menu__btn {
-        display: flex;
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .menu__btn span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        top: 8px;
+        transition: all 0.3s ease 0s;
+        border-radius: 10px;
+    }
+
+    .menu__btn::before,
+    .menu__btn::after {
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 10px;
+    }
+
+    .menu__btn::before {
+        top: 0;
+    }
+
+    .menu__btn::after {
+        bottom: 0;
+        width: 80%;
+        left: 20%;
     }
     
-    .menu__btn.menu--open {
-        display: none;
+    .menu__btn.menu--open span {
+        transform: scale(0);
+        background-color: #000000;
     }
 
-    .menu__btn--close {
-        display: none;
+    .menu__btn.menu--open::before {
+        transform: rotate(45deg);
+        top: 8px;
+        background-color: #000000;
     }
 
-    .menu__btn--close > .menu__btn.menu--open {
-        display: block;
+    .menu__btn.menu--open::after {
+        transform: rotate(-45deg);
+        bottom: 8px;
+        width: 100%;
+        background-color: #000000;
+        left: 0;
     }
+
 }

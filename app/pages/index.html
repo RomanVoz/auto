@@ -1,6 +1,8 @@
 <!--=include header.html -->
+<!--=include modal-start.html -->
 
 <main class="main">
+    
 
 <!-- СЕРЦИЯ TOP -->
     <section class="top">
@@ -73,31 +75,37 @@
         <h2 class="steps__title">Єтапи викупа авто</h2>
         <div class="title__bullet">
                 <svg class="icon-bullet" width="19" height="12">
-                <use href="../images/icon (1).svg"></use>
+                <use href="./img/icons.svg#icon-bullet"></use>
                 </svg>
             <p class="steps__text">від дзвінка до розрахунку</p>
         </div>
         <div class="steps__body">
             <ul class="speps__list">
-                <li>
+                <!-- <li>
                     <img src="../images/icon (1).svg" alt="">
+                    <p class="steps__icon-text">Заявка для оцінки авто</p>
+                </li> -->
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-document2"></use>
+                    </svg>
                     <p class="steps__icon-text">Заявка для оцінки авто</p>
                 </li>
                 <li>
                     <svg class="steps__icon" width="120" height="120">
-                    <use href="../images/auto.svg"></use>
+                    <use href="./img/icons.svg#icon-telephone"></use>
                     </svg>
                     <p class="steps__icon-text">Дзвінок автоексперту</p>
                 </li>
                 <li>
                     <svg class="steps__icon" width="120" height="120">
-                    <use href="../images/document.svg"></use>
+                    <use href="./img/icons.svg#icon-deal"></use>
                     </svg>
                     <p class="steps__icon-text">Огляд вашего авто</p>
                 </li>
                 <li>
                     <svg class="steps__icon" width="120" height="120">
-                    <use href="../images/cash.svg"></use>
+                    <use href="./img/icons.svg#icon-document"></use>
                     </svg>
                     <p class="steps__icon-text">Укладання договору</p>
                 </li>
@@ -214,7 +222,10 @@
                 <p class="steps__text">для нас це не проблема</p>
             </div>
                 <div class="credit__body">
-                    <img loading ="lazy" class="credit__many" src="../images/credit.png" alt="деньги">
+                    <img loading ="lazy" class="credit__many" src="./img/credit/many.png" alt="деньги">
+                    <img loading ="lazy" class="credit__lock" src="./img/credit/lock.png" alt="замок">
+                    <img loading ="lazy" class="credit__avto" src="./img/credit/avto.png" alt="авто">
+                    <!-- <img loading ="lazy" class="credit__many" src="../images/credit.png" alt="деньги"> -->
                     <ul class="credit__list">
                         <li>
                             <svg class="" width="30" height="30">
@@ -280,7 +291,8 @@
                 </svg>
                 <p class="steps__text">що про нас кажуть?</p>
             </div>
-           <div class="slider ">
+           <div class="slider">
+        <div class="reviews">
             <div class="slider__item reviews__list">
                 <div class="">
                     <p class="reviews__name">Дмитрий</p>
@@ -299,7 +311,8 @@
                     <p class="reviews__text">Оцінка мого автомобіля пройшла моментально, а викуп було укладено того ж дня. Відмінний сервіс!</p>
                 </div>
             </div>
-            <div class="slider__item reviews__list">
+        </div>
+            <!-- <div class="slider__item reviews__list">
                 <div class="">
                     <p class="reviews__name">Олександр</p>
                     <p class="reviews__text">Безпечна та надійна угода з автовикупу. Отримав хорошу ціну і швидко реалізував авто!</p>
@@ -316,7 +329,7 @@
                     <p class="reviews__name">Роман</p>
                     <p class="reviews__text">Приємно здивований швидкістю та якістю автовикупу. Рекомендую всім, хто хоче продати авто швидко та вигідно!</p>
                 </div>
-            </div>
+            </div> -->
            </div>
     </div>
     </section>
@@ -466,115 +479,7 @@
                         </li>
                 </ul>
             </div> -->
-    </section>
-<!-- FOOTER -->
-<footer class="footer container">
-            <p class="copyright">Швидко, просто, надійно.  ⒸАвтовикуп-Просто</p>
-                <div class="footer__navigation">
-                    <div>
-                        <img loading ="lazy" class="footer__logo" src="./img/Logo/logo-footer.png" alt="лого">
-                        <span class="footer__logo-text">Швидко, просто, надійно.</span>
-                        <p class="footer__text">Пишіть нам:</p>
-                        <ul class="footer__mesage">
-                            <li> 
-                                <a target="_blank" href="https://t.me/AvtoProsto_bot"> 
-                                    <svg class="icon-telegram" width="50" height="50">
-                                <use class="" href="./img/icons.svg#telegram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://t.me/AvtoProsto_bot">
-                                    <svg class="icon-viber" width="50" height="50">
-                                  <use class="" href="./img/icons.svg#viber"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="https://t.me/AvtoProsto_bot">
-                                    <svg class="icon-telegram" width="50" height="50">
-                                  <use class="" href="./img/icons.svg#whatsapp"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                   
-                    <ul class="footer__list">
-                        <li>
-                            <a href="#">Про нас</a>
-                        </li>
-                        <li>
-                            <a href="#">Розрахунок вартості</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Документи</a>
-                        </li>
-                        <li>
-                            <a href="#">Відгуки</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакти</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list">
-                        <li>
-                            <a href="#">Послуги</a>
-                        </li>
-                        <li>
-                            <a href="#">Викуп після ДТП</a>
-                        </li>
-                        <li>
-                            <a href="#">Викуп
-                                кредитних авто</a>
-                        </li>
-                        <li>
-                            <a href="#">Терміновий викуп</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="footer__contact">
-                            г.Киев, вул. Передова 19
-                            <p>пн-нд с 9:00 - 18:00</p>
-                        </li>
-                        <li class="footer__contact">
-                            <p>Email:</p>
-                            ruslan2020200@gmail.com
-                        </li>
-                        <li class="footer__contact">
-                            <p>Телефон:</p>
-                            +38 (068)-599-09-90
-                        </li>
-                    </ul>
-                </div>
-        </div>
-</footer>
-    <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  >
-</script>
-  <script defer src="../js/tgForm.js"></script>
-  <script defer src="../js/script.js"></script>
-  <script defer src="../js/faq.js"></script>
-  <script defer src="../js/slick.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SZVREB4XZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2SZVREB4XZ');
-</script>
-
+</section>
 </main>
 
 <!--=include footer.html -->

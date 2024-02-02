@@ -12,12 +12,12 @@ const newer        = require('gulp-newer');
 const fonter       = require('gulp-fonter');
 const ttf2woff2    = require('gulp-ttf2woff2');
 const svgSprite    = require('gulp-svg-sprite');
-const include    = require('gulp-include');
+const include      = require('gulp-include');
 
 // const autoprefixer = require('gulp-autoprefixer'); - НЕ РАБОТАЕТ???
 
 function pages() {
-    return src('app/pages/*.html')
+    return src(['app/pages/*/*.html', 'app/pages/blog/*.html', 'app/pages/ru/blog/*.html'])
     .pipe(include({
         includePaths: 'app/components'
     }))
